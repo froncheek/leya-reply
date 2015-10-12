@@ -13,7 +13,9 @@
   "keywords": [
     "jsleya",
     "leya",
-    "reply"
+    "reply",
+    "response",
+    "http response"
   ],
   "author": "froncheek <jerwin.ilagan@gmail.com>",
   "license": "MIT",
