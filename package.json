@@ -1,0 +1,24 @@
+{
+  "name": "leya-reply",
+  "version": "0.0.1",
+  "description": "",
+  "main": "leya-reply.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/froncheek/leya-reply.git"
+  },
+  "keywords": [
+    "jsleya",
+    "leya",
+    "reply"
+  ],
+  "author": "froncheek <jerwin.ilagan@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/froncheek/leya-reply/issues"
+  },
+  "homepage": "https://github.com/froncheek/leya-reply#readme"
+}
