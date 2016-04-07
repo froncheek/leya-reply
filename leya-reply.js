@@ -13,7 +13,7 @@ var fn = function(req, res) {
 	}
 	this.request = req;
 	this.response = res;
-};
+}, fnp = fn.prototype;
 
 fn.TYPEJSON = 'application/json';
 fn.TYPEJS = 'application/javascript';
@@ -25,7 +25,7 @@ fn.TYPECSS = 'text/css';
  * @method send
  * @param {String|Object} data
  */
-fn.prototype.send = function(d) {
+fnp.send = function(d) {
 	var res = this.response,
 		contentType = fn.TYPEHTML;
 
@@ -41,5 +41,31 @@ fn.prototype.send = function(d) {
 	res.write(d);
 	res.end();
 };
+fnp.sendStatus = function(code) {
+    this.response.writeHead(code);
+    this.response.end();
+}
+fnp.getMethod = function() {
+    return this.request.method;
+};
+fnp.getHeader = function(k) {
+    return this.request.headers[k];
+};
+fnp.getHeaders = function(k) {
+    return this.request.headers;
+};
+fnp.getFullUrl = function() {
+    return this.request.url;
+};
+fnp.getUrl = function() {
+    return this.request.url;
+};
+fnp.getParam = function() {
+    return this.request.url;
+};
+fnp.getHash = function() {
+    return this.request.url;
+};
+
 
 module.exports = fn;
